@@ -10770,16 +10770,16 @@
         },
         {
             "name": "twbs/bootstrap",
-            "version": "v4.5.0",
+            "version": "v4.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "7a6da5e3e7ad7c749dde806546a35d4d4259d965"
+                "reference": "5f2480a90ab911babc53039835fe78c6fc12646d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/7a6da5e3e7ad7c749dde806546a35d4d4259d965",
-                "reference": "7a6da5e3e7ad7c749dde806546a35d4d4259d965",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/5f2480a90ab911babc53039835fe78c6fc12646d",
+                "reference": "5f2480a90ab911babc53039835fe78c6fc12646d",
                 "shasum": ""
             },
             "replace": {
@@ -10823,7 +10823,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2020-05-12T17:44:42+00:00"
+            "time": "2020-08-06T16:22:43+00:00"
         },
         {
             "name": "twig/extensions",
@@ -12240,12 +12240,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "2df0155c461fcb226499e1e9f856e0ee587e8ac4"
+                "reference": "2799d9358c110bf7452ff4d8d1ba5e007ef9c7a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/2df0155c461fcb226499e1e9f856e0ee587e8ac4",
-                "reference": "2df0155c461fcb226499e1e9f856e0ee587e8ac4",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/2799d9358c110bf7452ff4d8d1ba5e007ef9c7a4",
+                "reference": "2799d9358c110bf7452ff4d8d1ba5e007ef9c7a4",
                 "shasum": ""
             },
             "require": {
@@ -12329,7 +12329,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-07-10T07:40:31+00:00"
+            "time": "2020-08-06T13:57:51+00:00"
         },
         {
             "name": "myclabs/deep-copy",
