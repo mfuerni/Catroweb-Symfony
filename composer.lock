@@ -11873,6 +11873,7 @@
                 "phar",
                 "update"
             ],
+            "abandoned": true,
             "time": "2019-12-12T13:45:57+00:00"
         },
         {
@@ -13393,6 +13394,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-06-27T06:36:25+00:00"
         },
         {
@@ -14579,16 +14581,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v5.1.2",
+            "version": "v5.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "de5f0fec631a0cbfe98630b053be1fad7b75aece"
+                "reference": "6753ea4cb2dab705e819b1ddd8833a5c98338650"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/de5f0fec631a0cbfe98630b053be1fad7b75aece",
-                "reference": "de5f0fec631a0cbfe98630b053be1fad7b75aece",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/6753ea4cb2dab705e819b1ddd8833a5c98338650",
+                "reference": "6753ea4cb2dab705e819b1ddd8833a5c98338650",
                 "shasum": ""
             },
             "require": {
@@ -14596,6 +14598,9 @@
             },
             "conflict": {
                 "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0|<6.4,>=6.0|9.1.2"
+            },
+            "require-dev": {
+                "symfony/deprecation-contracts": "^2.1"
             },
             "suggest": {
                 "symfony/error-handler": "For tracking deprecated interfaces usages at runtime with DebugClassLoader"
@@ -14654,7 +14659,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-09T09:56:30+00:00"
+            "time": "2020-09-18T14:27:32+00:00"
         },
         {
             "name": "symfony/polyfill-php70",
