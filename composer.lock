@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "46edf21f849c16e948b9d21e2ed0db13",
+    "content-hash": "42acace823733562bbfa325057e043e8",
     "packages": [
         {
             "name": "beberlei/doctrineextensions",
@@ -62,16 +62,16 @@
         },
         {
             "name": "catrobat/capi",
-            "version": "v1.0.41",
+            "version": "v1.0.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Catrobat/Catroweb-API.git",
-                "reference": "fd658069865cf36fcd8c5ea5e86c27cd68a7b303"
+                "reference": "e7e0dc0419c9f75be731879ce57024903935c5ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Catrobat/Catroweb-API/zipball/fd658069865cf36fcd8c5ea5e86c27cd68a7b303",
-                "reference": "fd658069865cf36fcd8c5ea5e86c27cd68a7b303",
+                "url": "https://api.github.com/repos/Catrobat/Catroweb-API/zipball/e7e0dc0419c9f75be731879ce57024903935c5ce",
+                "reference": "e7e0dc0419c9f75be731879ce57024903935c5ce",
                 "shasum": ""
             },
             "require": {
@@ -119,10 +119,10 @@
                 "sdk"
             ],
             "support": {
-                "source": "https://github.com/Catrobat/Catroweb-API/tree/v1.0.41",
+                "source": "https://github.com/Catrobat/Catroweb-API/tree/v1.0.47",
                 "issues": "https://github.com/Catrobat/Catroweb-API/issues"
             },
-            "time": "2020-07-07T12:09:42+00:00"
+            "time": "2020-11-25T10:13:10+00:00"
         },
         {
             "name": "clue/stream-filter",
@@ -248,16 +248,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.10.3",
+            "version": "1.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d"
+                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5db60a4969eba0e0c197a19c077780aadbc43c5d",
-                "reference": "5db60a4969eba0e0c197a19c077780aadbc43c5d",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
+                "reference": "ce77a7ba1770462cd705a91a151b6c3746f9c6ad",
                 "shasum": ""
             },
             "require": {
@@ -267,12 +267,14 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^7.5"
+                "doctrine/coding-standard": "^6.0 || ^8.1",
+                "phpstan/phpstan": "^0.12.20",
+                "phpunit/phpunit": "^7.5 || ^9.1.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9.x-dev"
+                    "dev-master": "1.11.x-dev"
                 }
             },
             "autoload": {
@@ -307,13 +309,13 @@
                 }
             ],
             "description": "Docblock Annotations Parser",
-            "homepage": "http://www.doctrine-project.org",
+            "homepage": "https://www.doctrine-project.org/projects/annotations.html",
             "keywords": [
                 "annotations",
                 "docblock",
                 "parser"
             ],
-            "time": "2020-05-25T17:24:27+00:00"
+            "time": "2020-10-26T10:28:16+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1055,36 +1057,31 @@
         },
         {
             "name": "doctrine/instantiator",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/instantiator.git",
-                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea"
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/f350df0268e904597e3bd9c4685c53e0e333feea",
-                "reference": "f350df0268e904597e3bd9c4685c53e0e333feea",
+                "url": "https://api.github.com/repos/doctrine/instantiator/zipball/d56bf6102915de5702778fe20f2de3b2fe570b5b",
+                "reference": "d56bf6102915de5702778fe20f2de3b2fe570b5b",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
+                "doctrine/coding-standard": "^8.0",
                 "ext-pdo": "*",
                 "ext-phar": "*",
-                "phpbench/phpbench": "^0.13",
-                "phpstan/phpstan-phpunit": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpunit/phpunit": "^7.0"
+                "phpbench/phpbench": "^0.13 || 1.0.0-alpha2",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-phpunit": "^0.12",
+                "phpunit/phpunit": "^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.2.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
@@ -1098,7 +1095,7 @@
                 {
                     "name": "Marco Pivetta",
                     "email": "ocramius@gmail.com",
-                    "homepage": "http://ocramius.github.com/"
+                    "homepage": "https://ocramius.github.io/"
                 }
             ],
             "description": "A small, lightweight utility to instantiate objects in PHP without invoking their constructors",
@@ -1121,7 +1118,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-29T17:27:14+00:00"
+            "time": "2020-11-10T18:47:58+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1573,6 +1570,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
@@ -3466,7 +3464,8 @@
                 "themes",
                 "theming"
             ],
-            "time": "2019-06-19T12:53:08+00:00"
+            "abandoned": "sylius/theme-bundle",
+            "time": "2020-11-23T14:25:37+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4233,24 +4232,24 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.7.4",
+            "version": "1.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3"
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3",
-                "reference": "b2ada2ad5d8a32b89088b8adc31ecd2e3a13baf3",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/994ecccd8f3283ecf5ac33254543eb0ac946d525",
+                "reference": "994ecccd8f3283ecf5ac33254543eb0ac946d525",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.3",
-                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27 || ^6.5.6 || ^7.0 || ^8.0 || ^9.0"
             },
             "type": "library",
             "extra": {
@@ -4294,7 +4293,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-07T10:40:07+00:00"
+            "time": "2020-07-20T17:29:33+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -7950,20 +7949,20 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.17.1",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d"
+                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
-                "reference": "2edd75b8b35d62fd3eeabba73b26b8f1f60ce13d",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/f4ba089a5b6366e453971d3aad5fe8e897b37f41",
+                "reference": "f4ba089a5b6366e453971d3aad5fe8e897b37f41",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-ctype": "For best performance"
@@ -7971,7 +7970,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -8022,7 +8021,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "symfony/polyfill-iconv",
@@ -8418,20 +8417,20 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.17.1",
+            "version": "v1.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "7110338d81ce1cbc3e273136e4574663627037a7"
+                "reference": "39d483bdf39be819deabf04ec872eb0b2410b531"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7110338d81ce1cbc3e273136e4574663627037a7",
-                "reference": "7110338d81ce1cbc3e273136e4574663627037a7",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/39d483bdf39be819deabf04ec872eb0b2410b531",
+                "reference": "39d483bdf39be819deabf04ec872eb0b2410b531",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": ">=7.1"
             },
             "suggest": {
                 "ext-mbstring": "For best performance"
@@ -8439,7 +8438,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.17-dev"
+                    "dev-main": "1.20-dev"
                 },
                 "thanks": {
                     "name": "symfony/polyfill",
@@ -8491,7 +8490,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-06T08:46:27+00:00"
+            "time": "2020-10-23T14:02:19+00:00"
         },
         {
             "name": "symfony/polyfill-php56",
@@ -10112,16 +10111,16 @@
         },
         {
             "name": "symfony/translation-contracts",
-            "version": "v2.1.3",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation-contracts.git",
-                "reference": "616a9773c853097607cf9dd6577d5b143ffdcd63"
+                "reference": "e2eaa60b558f26a4b0354e1bbb25636efaaad105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/616a9773c853097607cf9dd6577d5b143ffdcd63",
-                "reference": "616a9773c853097607cf9dd6577d5b143ffdcd63",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/e2eaa60b558f26a4b0354e1bbb25636efaaad105",
+                "reference": "e2eaa60b558f26a4b0354e1bbb25636efaaad105",
                 "shasum": ""
             },
             "require": {
@@ -10133,7 +10132,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.3-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -10183,7 +10182,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-06T13:23:11+00:00"
+            "time": "2020-09-28T13:05:58+00:00"
         },
         {
             "name": "symfony/twig-bridge",
@@ -10421,16 +10420,16 @@
         },
         {
             "name": "symfony/validator",
-            "version": "v4.4.10",
+            "version": "v4.4.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/validator.git",
-                "reference": "2fae3378102cff29976ce9e35f6964c78fce02b6"
+                "reference": "1d214a3aaa0753b19f94cf0479d8c315d957a10d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/validator/zipball/2fae3378102cff29976ce9e35f6964c78fce02b6",
-                "reference": "2fae3378102cff29976ce9e35f6964c78fce02b6",
+                "url": "https://api.github.com/repos/symfony/validator/zipball/1d214a3aaa0753b19f94cf0479d8c315d957a10d",
+                "reference": "1d214a3aaa0753b19f94cf0479d8c315d957a10d",
                 "shasum": ""
             },
             "require": {
@@ -10481,11 +10480,6 @@
                 "symfony/yaml": ""
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.4-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Validator\\": ""
@@ -10524,7 +10518,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-30T18:50:54+00:00"
+            "time": "2020-10-28T05:25:24+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -10878,6 +10872,7 @@
                 "i18n",
                 "text"
             ],
+            "abandoned": true,
             "time": "2018-12-05T18:34:18+00:00"
         },
         {
@@ -11873,6 +11868,7 @@
                 "phar",
                 "update"
             ],
+            "abandoned": true,
             "time": "2019-12-12T13:45:57+00:00"
         },
         {
@@ -13393,6 +13389,7 @@
                     "type": "github"
                 }
             ],
+            "abandoned": true,
             "time": "2020-06-27T06:36:25+00:00"
         },
         {
@@ -14999,12 +14996,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wapmorgan/PhpCodeFixer.git",
-                "reference": "8b4ea516a1e5f163cbd9e3426bbe3a23532997d2"
+                "reference": "12b2998163eabb54704b5d93a63666cebde91ebf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wapmorgan/PhpCodeFixer/zipball/8b4ea516a1e5f163cbd9e3426bbe3a23532997d2",
-                "reference": "8b4ea516a1e5f163cbd9e3426bbe3a23532997d2",
+                "url": "https://api.github.com/repos/wapmorgan/PhpCodeFixer/zipball/12b2998163eabb54704b5d93a63666cebde91ebf",
+                "reference": "12b2998163eabb54704b5d93a63666cebde91ebf",
                 "shasum": ""
             },
             "require": {
@@ -15049,7 +15046,7 @@
                 "BSD-3-Clause"
             ],
             "description": "Analyzer of PHP code to search issues with deprecated functionality in newer interpreter versions.",
-            "time": "2020-06-13T18:33:47+00:00"
+            "time": "2020-11-04T14:16:51+00:00"
         },
         {
             "name": "webmozart/assert",
